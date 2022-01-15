@@ -32,4 +32,11 @@ class HomeController extends ChangeNotifier {
     selectedBottomTab = selectedTab;
     notifyListeners();
   }
+
+  bool isCoolSelected = true;
+
+  void updateCoolSelectedTab() {
+    isCoolSelected = !isCoolSelected;
+    notifyListeners();
+  }
 }
